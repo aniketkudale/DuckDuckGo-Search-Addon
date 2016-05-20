@@ -43,8 +43,8 @@ var windows = require("sdk/windows").browserWindows;
 var tabs = require("sdk/tabs");
 
  var menuItem = contextMenu.Item({
-  label: "DuckDuckGo...",
-  data: "http://www.duckduckgo.com/?q=",
+  label: "Search with DuckDuckGo",
+  data: "https://duckduckgo.com/?q=",
   context: contextMenu.SelectionContext(),
 
   contentScript: 'self.on("click", function (node, data) {' +
